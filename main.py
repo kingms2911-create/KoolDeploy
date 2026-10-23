@@ -1,6 +1,9 @@
 @app.get("/")
 async def root():
     return {"status": "success", "message": "KoolBot Backend is Running Smoothly!"}
+@app.get("/")
+async def root():
+    return {"status": "success", "message": "KoolBot Backend is Running Smoothly!"}
 import asyncio
 import base64
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
